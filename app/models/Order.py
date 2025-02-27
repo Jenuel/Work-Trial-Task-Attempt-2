@@ -6,7 +6,7 @@ class Order(Base):
     __tablename__ = "orders"
 
     id = Column(Integer, primary_key=True, index=True)
-    symbol = Column(String, description="The symbol of the stock.")
-    price = Column(Float, description="The price of the order.")
-    quantity = Column(Integer, description="The quantity of the order.")
-    order_type = Column(String, description="The type of the order (buy or sell).")
+    symbol = Column(String)
+    price = Column(Float)
+    quantity = Column(Integer)
+    order_type = Column(String)
